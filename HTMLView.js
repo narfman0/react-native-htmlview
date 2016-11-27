@@ -23,7 +23,7 @@ const baseStyles = StyleSheet.create({
   },
 })
 
-class HtmlView extends Component {
+export default class HtmlView extends Component {
   constructor() {
     super()
     this.state = {
@@ -88,5 +88,3 @@ HtmlView.defaultProps = {
   onLinkPress: url => Linking.openURL(url),
   onError: console.error.bind(console),
 }
-
-export default HtmlView
